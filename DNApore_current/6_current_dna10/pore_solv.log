@@ -1,0 +1,3 @@
+Running solvate with arguments: pore.psf pore.pdb +z 20 -z 20 -o pore_solv
+replicating 1 by 1 by 2
+Solvate 1.2 completed successfully.
