@@ -1,0 +1,6 @@
+------------- Processor 0 Exiting: Called CmiAbort ------------
+Reason: Multiple PEs assigned to same core. Set affinity options to correct or lower the number of threads, or pass +setcpuaffinity to ignore.
+
+Charm++ fatal error:
+Multiple PEs assigned to same core. Set affinity options to correct or lower the number of threads, or pass +setcpuaffinity to ignore.
+
