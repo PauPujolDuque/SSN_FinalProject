@@ -1,0 +1,745 @@
+Info: NAMD 2.6 for Linux-amd64
+Info: 
+Info: Please visit http://www.ks.uiuc.edu/Research/namd/
+Info: and send feedback or bug reports to namd@ks.uiuc.edu
+Info: 
+Info: Please cite Phillips et al., J. Comp. Chem. 26:1781-1802 (2005)
+Info: in all publications reporting results obtained with NAMD.
+Info: 
+Info: Based on Charm++/Converse 50900 for net-linux-amd64-iccstatic
+Info: Built Wed Aug 30 12:54:51 CDT 2006 by jim on belfast.ks.uiuc.edu
+Info: 1 NAMD  2.6  Linux-amd64  1    tashkent.ks.uiuc.edu  jcomer
+Info: Running on 1 processors.
+Info: 7604 kB of memory in use.
+Info: Memory usage based on mallinfo
+Info: Configuration file is field.namd
+TCL: Suspending until startup complete.
+Info: EXTENDED SYSTEM FILE   eq2.xsc
+Info: SIMULATION PARAMETERS:
+Info: TIMESTEP               1
+Info: NUMBER OF STEPS        1000
+Info: STEPS PER CYCLE        20
+Info: PERIODIC CELL BASIS 1  34.1775 19.7324 0
+Info: PERIODIC CELL BASIS 2  0 39.4648 0
+Info: PERIODIC CELL BASIS 3  0 0 17.412
+Info: PERIODIC CELL CENTER   0 0 0
+Info: WRAPPING ALL CLUSTERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: WRAPPING TO IMAGE NEAREST TO PERIODIC CELL CENTER.
+Info: LOAD BALANCE STRATEGY  Other
+Info: LDB PERIOD             4000 steps
+Info: FIRST LDB TIMESTEP     100
+Info: LDB BACKGROUND SCALING 1
+Info: HOM BACKGROUND SCALING 1
+Info: PME BACKGROUND SCALING 1
+Info: MAX SELF PARTITIONS    50
+Info: MAX PAIR PARTITIONS    20
+Info: SELF PARTITION ATOMS   125
+Info: PAIR PARTITION ATOMS   200
+Info: PAIR2 PARTITION ATOMS  400
+Info: MIN ATOMS PER PATCH    100
+Info: VELOCITY FILE          eq2.vel
+Info: CENTER OF MASS MOVING INITIALLY? NO
+Info: DIELECTRIC             1
+Info: EXCLUDE                SCALED ONE-FOUR
+Info: 1-4 SCALE FACTOR       1
+Info: DCD FILENAME           field1.0.dcd
+Info: DCD FREQUENCY          100
+Info: DCD FIRST STEP         100
+Info: DCD FILE WILL CONTAIN UNIT CELL DATA
+Info: XST FILENAME           field1.0.xst
+Info: XST FREQUENCY          100
+Info: NO VELOCITY DCD OUTPUT
+Info: OUTPUT FILENAME        field1.0
+Info: BINARY OUTPUT FILES WILL BE USED
+Info: RESTART FILENAME       field1.0.restart
+Info: RESTART FREQUENCY      100
+Info: BINARY RESTART FILES WILL BE USED
+Info: SWITCHING ACTIVE
+Info: SWITCHING ON           10
+Info: SWITCHING OFF          12
+Info: PAIRLIST DISTANCE      14
+Info: PAIRLIST SHRINK RATE   0.01
+Info: PAIRLIST GROW RATE     0.01
+Info: PAIRLIST TRIGGER       0.3
+Info: PAIRLISTS PER CYCLE    2
+Info: PAIRLISTS ENABLED
+Info: MARGIN                 3
+Info: HYDROGEN GROUP CUTOFF  2.5
+Info: PATCH DIMENSION        19.5
+Info: ENERGY OUTPUT STEPS    100
+Info: CROSSTERM ENERGY INCLUDED IN DIHEDRAL
+Info: TIMING OUTPUT STEPS    100
+Info: HARMONIC CONSTRAINTS ACTIVE
+Info: HARMONIC CONS EXP      2
+Info: ELECTRIC FIELD ACTIVE
+Info: E-FIELD VECTOR         (0, 0, 16)
+Info: LANGEVIN DYNAMICS ACTIVE
+Info: LANGEVIN TEMPERATURE   295
+Info: LANGEVIN DAMPING COEFFICIENT IS 0.2 INVERSE PS
+Info: LANGEVIN DYNAMICS NOT APPLIED TO HYDROGENS
+Info: PARTICLE MESH EWALD (PME) ACTIVE
+Info: PME TOLERANCE               1e-06
+Info: PME EWALD COEFFICIENT       0.257952
+Info: PME INTERPOLATION ORDER     4
+Info: PME GRID DIMENSIONS         48 48 128
+Info: PME MAXIMUM GRID SPACING    1.5
+Info: Attempting to read FFTW data from FFTW_NAMD_2.6_Linux-amd64.txt
+Info: Optimizing 6 FFT steps.  1... 2... 3... 4... 5... 6...   Done.
+Info: Writing FFTW data to FFTW_NAMD_2.6_Linux-amd64.txt
+Info: FULL ELECTROSTATIC EVALUATION FREQUENCY      4
+Info: USING VERLET I (r-RESPA) MTS SCHEME.
+Info: C1 SPLITTING OF LONG RANGE ELECTROSTATICS
+Info: PLACING ATOMS IN PATCHES BY HYDROGEN GROUPS
+Info: NONBONDED FORCES EVALUATED EVERY 2 STEPS
+Info: RANDOM NUMBER SEED     1175903593
+Info: USE HYDROGEN BONDS?    NO
+Info: COORDINATE PDB         ../1_build/membrane_hex.pdb
+Info: STRUCTURE FILE         ../1_build/membrane_hex.psf
+Info: PARAMETER file: CHARMM format! 
+Info: PARAMETERS             par_silicon_ions_NEW0.1.inp
+Info: USING ARITHMETIC MEAN TO COMBINE L-J SIGMA PARAMETERS
+Info: BINARY COORDINATES     eq2.coor
+Info: SUMMARY OF PARAMETERS:
+Info: 11 BONDS
+Info: 36 ANGLES
+Info: 0 DIHEDRAL
+Info: 0 IMPROPER
+Info: 0 CROSSTERM
+Info: 15 VDW
+Info: 0 VDW_PAIRS
+Info: ****************************
+Info: STRUCTURE SUMMARY:
+Info: 2268 ATOMS
+Info: 3888 BONDS
+Info: 9720 ANGLES
+Info: 0 DIHEDRALS
+Info: 0 IMPROPERS
+Info: 0 CROSSTERMS
+Info: 0 EXCLUSIONS
+Info: 2268 CONSTRAINTS
+Info: 6804 DEGREES OF FREEDOM
+Info: 2268 HYDROGEN GROUPS
+Info: TOTAL MASS = 45452.2 amu
+Info: TOTAL CHARGE = 3.86238e-05 e
+Info: *****************************
+Info: Entering startup phase 0 with 8776 kB of memory in use.
+Info: Entering startup phase 1 with 8776 kB of memory in use.
+Info: Entering startup phase 2 with 8776 kB of memory in use.
+Info: Entering startup phase 3 with 8776 kB of memory in use.
+Info: PATCH GRID IS 1 (PERIODIC) BY 1 (PERIODIC) BY 1 (PERIODIC)
+Info: REMOVING COM VELOCITY -0.0118078 0.013194 -0.0196803
+Info: LARGEST PATCH (0) HAS 2268 ATOMS
+Info: CREATING 323 COMPUTE OBJECTS
+Info: Entering startup phase 4 with 8776 kB of memory in use.
+Info: PME using 1 and 1 processors for FFT and reciprocal sum.
+Info: PME GRID LOCATIONS: 0
+Info: PME TRANS LOCATIONS: 0
+Info: Optimizing 4 FFT steps.  1... 2... 3... 4...   Done.
+Info: Entering startup phase 5 with 10264 kB of memory in use.
+Info: Entering startup phase 6 with 10264 kB of memory in use.
+Measuring processor speeds... Done.
+Info: Entering startup phase 7 with 10264 kB of memory in use.
+Info: CREATING 323 COMPUTE OBJECTS
+Info: NONBONDED TABLE R-SQUARED SPACING: 0.0625
+Info: NONBONDED TABLE SIZE: 769 POINTS
+Info: Entering startup phase 8 with 10452 kB of memory in use.
+Info: Finished startup with 10708 kB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP         TOTAL2         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:       0        47.1228         0.8379         0.0000         0.0000        -308186.0814     -2123.9522       410.2212       -18.8872      2032.8307        -307837.9082       300.6957   -307836.3063   -307836.3063       300.6957        -123906.6113   -123906.6113     23485.4484   -123906.6113   -123906.6113
+
+OPENING EXTENDED SYSTEM TRAJECTORY FILE
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Info: Initial time: 1 CPUs 0.134083 s/step 1.55189 days/ns 24232 kB memory
+TIMING: 100  CPU: 14.0329, 0.117822/step  Wall: 16.0202, 0.135802/step, 0.0339506 hours remaining, 24232 kB of memory in use.
+ENERGY:     100        87.3718         1.3173         0.0000         0.0000        -309921.2513      2289.4759       677.6372     -3982.1631      2969.5702        -307878.0420       439.2580   -307875.0454   -307876.9132       433.8960         -57752.7273    -57752.7273     23485.4484    -87348.1862    -87348.1862
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 100
+OPENING COORDINATE DCD FILE
+WRITING COORDINATES TO DCD FILE AT STEP 100
+WRITING COORDINATES TO RESTART FILE AT STEP 100
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 100
+FINISHED WRITING RESTART VELOCITIES
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Info: Initial time: 1 CPUs 0.131286 s/step 1.51951 days/ns 24788 kB memory
+TIMING: 200  CPU: 26.097, 0.120642/step  Wall: 29.2947, 0.132745/step, 0.0294988 hours remaining, 24788 kB of memory in use.
+ENERGY:     200       143.4486         2.5902         0.0000         0.0000        -312204.0025      5392.3361      1093.7790     -6016.0621      3650.8389        -307937.0717       540.0311   -307933.0809   -307935.3423       499.6103         -12543.9485    -12543.9485     23485.4484    -25576.0153    -25576.0153
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 200
+WRITING COORDINATES TO DCD FILE AT STEP 200
+WRITING COORDINATES TO RESTART FILE AT STEP 200
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 200
+FINISHED WRITING RESTART VELOCITIES
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Info: Initial time: 1 CPUs 0.124191 s/step 1.4374 days/ns 24864 kB memory
+TIMING: 300  CPU: 38.3132, 0.122161/step  Wall: 41.8786, 0.125839/step, 0.0244687 hours remaining, 24864 kB of memory in use.
+ENERGY:     300       208.5178         4.3062         0.0000         0.0000        -314426.7121      7008.2849      1899.3281     -7350.4455      4506.9913        -308149.7293       666.6729   -308145.6793   -308145.9365       619.8753          11945.3974     11945.3974     23485.4484     -1468.2637     -1468.2637
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 300
+WRITING COORDINATES TO DCD FILE AT STEP 300
+WRITING COORDINATES TO RESTART FILE AT STEP 300
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 300
+FINISHED WRITING RESTART VELOCITIES
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Info: Benchmark time: 1 CPUs 0.125752 s/step 1.45547 days/ns 25008 kB memory
+TIMING: 400  CPU: 50.6413, 0.123281/step  Wall: 54.6188, 0.127402/step, 0.0212337 hours remaining, 25008 kB of memory in use.
+ENERGY:     400       296.0894         5.7286         0.0000         0.0000        -317261.8561      9793.6257      2694.9992     -9323.6918      5179.7332        -308615.3718       766.1847   -308609.7959   -308612.1838       725.2317          53359.3394     53359.3394     23485.4484     35403.6358     35403.6358
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 400
+WRITING COORDINATES TO DCD FILE AT STEP 400
+WRITING COORDINATES TO RESTART FILE AT STEP 400
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 400
+FINISHED WRITING RESTART VELOCITIES
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Info: Benchmark time: 1 CPUs 0.123885 s/step 1.43386 days/ns 25084 kB memory
+TIMING: 500  CPU: 62.8254, 0.121841/step  Wall: 67.0074, 0.123886/step, 0.0172064 hours remaining, 25084 kB of memory in use.
+ENERGY:     500       351.5733         6.5325         0.0000         0.0000        -318252.4099     10837.0515      3199.7560    -10527.8559      5550.1574        -308835.1951       820.9777   -308828.7309   -308830.9120       802.7185          69143.4677     69143.4677     23485.4484     62690.9655     62690.9655
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 500
+WRITING COORDINATES TO DCD FILE AT STEP 500
+WRITING COORDINATES TO RESTART FILE AT STEP 500
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 500
+FINISHED WRITING RESTART VELOCITIES
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Info: Benchmark time: 1 CPUs 0.124288 s/step 1.43852 days/ns 25100 kB memory
+TIMING: 600  CPU: 75.0306, 0.122051/step  Wall: 79.4363, 0.124289/step, 0.0138099 hours remaining, 25100 kB of memory in use.
+ENERGY:     600       398.1278         7.0355         0.0000         0.0000        -319687.7822     11858.5383      3533.8080    -11322.0049      5982.4260        -309229.8514       884.9188   -309222.9682   -309223.8021       846.7146          84942.9129     84942.9129     23485.4484     77764.1616     77764.1616
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 600
+WRITING COORDINATES TO DCD FILE AT STEP 600
+WRITING COORDINATES TO RESTART FILE AT STEP 600
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 600
+FINISHED WRITING RESTART VELOCITIES
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+TIMING: 700  CPU: 87.5207, 0.124901/step  Wall: 92.1854, 0.12749/step, 0.0106242 hours remaining, 25144 kB of memory in use.
+ENERGY:     700       436.6690         7.4631         0.0000         0.0000        -320554.7083     12549.8830      3771.7799    -11918.3751      6210.5632        -309496.7252       918.6648   -309489.5839   -309489.5241       899.5282          96061.0117     96061.0117     23485.4484     91024.2053     91024.2053
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 700
+WRITING COORDINATES TO DCD FILE AT STEP 700
+WRITING COORDINATES TO RESTART FILE AT STEP 700
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 700
+FINISHED WRITING RESTART VELOCITIES
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+TIMING: 800  CPU: 99.7028, 0.121821/step  Wall: 104.621, 0.124361/step, 0.00690893 hours remaining, 25144 kB of memory in use.
+ENERGY:     800       476.7179         7.8388         0.0000         0.0000        -321180.0853     12986.8772      4030.1585    -12449.8868      6287.1013        -309841.2783       929.9863   -309832.5563   -309836.1763       938.2656         103015.3672    103015.3672     23485.4484     99193.9797     99193.9797
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 800
+WRITING COORDINATES TO DCD FILE AT STEP 800
+WRITING COORDINATES TO RESTART FILE AT STEP 800
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 800
+FINISHED WRITING RESTART VELOCITIES
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+TIMING: 900  CPU: 112.107, 0.124041/step  Wall: 117.213, 0.125916/step, 0.00349767 hours remaining, 25144 kB of memory in use.
+ENERGY:     900       521.2481         8.1894         0.0000         0.0000        -322017.9634     13314.8372      4308.7564    -12773.8563      6466.1507        -310172.6379       956.4712   -310163.8297   -310166.0919       949.2029         108312.1432    108312.1432     23485.4484    106337.6394    106337.6394
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 900
+WRITING COORDINATES TO DCD FILE AT STEP 900
+WRITING COORDINATES TO RESTART FILE AT STEP 900
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 900
+FINISHED WRITING RESTART VELOCITIES
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+Warning: Not all atoms have unique coordinates.
+TIMING: 1000  CPU: 124.302, 0.121951/step  Wall: 129.654, 0.12441/step, 0 hours remaining, 25144 kB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP         TOTAL2         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:    1000       556.2722         8.4639         0.0000         0.0000        -322587.0733     13714.5764      4544.7622    -13254.5912      6715.3568        -310302.2330       993.3337   -310293.1348   -310294.2302       968.0507         114012.6410    114012.6410     23485.4484    113289.6605    113289.6605
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 1000
+WRITING COORDINATES TO DCD FILE AT STEP 1000
+WRITING COORDINATES TO RESTART FILE AT STEP 1000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 1000
+FINISHED WRITING RESTART VELOCITIES
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 1000
+CLOSING EXTENDED SYSTEM TRAJECTORY FILE
+WRITING COORDINATES TO OUTPUT FILE AT STEP 1000
+CLOSING COORDINATE DCD FILE
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 1000
+==========================================
+WallClock: 130.724380  CPUTime: 124.615059  Memory: 25144 kB
