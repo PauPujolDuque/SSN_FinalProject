@@ -1,0 +1,3 @@
+Running solvate with arguments: ../1_build/pore.psf ../1_build/pore.pdb +z 20 -z 20 -o pore_solv
+replicating 1 by 1 by 1
+Solvate 1.2 completed successfully.
