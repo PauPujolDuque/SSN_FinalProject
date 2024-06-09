@@ -1,0 +1,357 @@
+Charm++> No provisioning arguments specified. Running with a single PE.
+         Use +auto-provision to fully subscribe resources or +p1 to silence this message.
+Charm++: standalone mode (not using charmrun)
+Charm++> Running in Multicore mode: 1 threads (PEs)
+Charm++> Using recursive bisection (scheme 3) for topology aware partitions
+Converse/Charm++ Commit ID: v6.10.2-0-g7bf00fa-namd-charm-6.10.2-build-2020-Aug-05-556
+Warning> Randomization of virtual memory (ASLR) is turned on in the kernel, thread migration may not work! Run 'echo 0 > /proc/sys/kernel/randomize_va_space' as root to disable it, or try running with '+isomalloc_sync'.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 1 hosts (1 sockets x 4 cores x 1 PUs = 4-way SMP)
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Info: NAMD 2.14 for Linux-x86_64-multicore
+Info: 
+Info: Please visit http://www.ks.uiuc.edu/Research/namd/
+Info: for updates, documentation, and support information.
+Info: 
+Info: Please cite Phillips et al., J. Chem. Phys. 153:044130 (2020) doi:10.1063/5.0014475
+Info: in all publications reporting results obtained with NAMD.
+Info: 
+Info: Based on Charm++/Converse 61002 for multicore-linux-x86_64-iccstatic
+Info: Built Mon Aug 24 10:08:36 CDT 2020 by jim on belfast.ks.uiuc.edu
+Info: 1 NAMD  2.14  Linux-x86_64-multicore  1    pc6-02  convidat
+Info: Running on 1 processors, 1 nodes, 1 physical nodes.
+Info: CPU topology information available.
+Info: Charm++/Converse parallel runtime startup completed at 0.00306483 s
+CkLoopLib is used in SMP with simple dynamic scheduling (converse-level notification)
+Info: 33.2969 MB of memory in use based on /proc/self/stat
+Info: Configuration file is run0.namd
+Info: Working in the current directory /home/samba/homes/convidat/Desktop/bionano-tutorial-files/4_current
+TCL: Suspending until startup complete.
+Info: EXTENDED SYSTEM FILE   sample.xsc
+Info: SIMULATION PARAMETERS:
+Info: TIMESTEP               1
+Info: NUMBER OF STEPS        1000
+Info: STEPS PER CYCLE        20
+Info: PERIODIC CELL BASIS 1  33.2881 19.1965 0
+Info: PERIODIC CELL BASIS 2  0 38.3931 0
+Info: PERIODIC CELL BASIS 3  0 0 44.7598
+Info: PERIODIC CELL CENTER   0 0 0
+Info: WRAPPING ALL CLUSTERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: WRAPPING TO IMAGE NEAREST TO PERIODIC CELL CENTER.
+Info: LOAD BALANCER  Centralized
+Info: LOAD BALANCING STRATEGY  New Load Balancers -- DEFAULT
+Info: LDB PERIOD             4000 steps
+Info: FIRST LDB TIMESTEP     100
+Info: LAST LDB TIMESTEP     -1
+Info: LDB BACKGROUND SCALING 1
+Info: HOM BACKGROUND SCALING 1
+Info: PME BACKGROUND SCALING 1
+Info: MIN ATOMS PER PATCH    40
+Info: VELOCITY FILE          sample.vel
+Info: CENTER OF MASS MOVING INITIALLY? NO
+Info: DIELECTRIC             1
+Info: EXCLUDE                SCALED ONE-FOUR
+Info: 1-4 ELECTROSTATICS SCALED BY 1
+Info: MODIFIED 1-4 VDW PARAMETERS WILL BE USED
+Info: DCD FILENAME           run0.dcd
+Info: DCD FREQUENCY          100
+Info: DCD FIRST STEP         100
+Info: DCD FILE WILL CONTAIN UNIT CELL DATA
+Info: XST FILENAME           run0.xst
+Info: XST FREQUENCY          100
+Info: NO VELOCITY DCD OUTPUT
+Info: NO FORCE DCD OUTPUT
+Info: OUTPUT FILENAME        run0
+Info: BINARY OUTPUT FILES WILL BE USED
+Info: RESTART FILENAME       run0.restart
+Info: RESTART FREQUENCY      100
+Info: BINARY RESTART FILES WILL BE USED
+Info: SWITCHING ACTIVE
+Info: SWITCHING ON           10
+Info: SWITCHING OFF          12
+Info: PAIRLIST DISTANCE      14
+Info: PAIRLIST SHRINK RATE   0.01
+Info: PAIRLIST GROW RATE     0.01
+Info: PAIRLIST TRIGGER       0.3
+Info: PAIRLISTS PER CYCLE    2
+Info: PAIRLISTS ENABLED
+Info: MARGIN                 3
+Info: HYDROGEN GROUP CUTOFF  2.5
+Info: PATCH DIMENSION        19.5
+Info: ENERGY OUTPUT STEPS    100
+Info: CROSSTERM ENERGY INCLUDED IN DIHEDRAL
+Info: TIMING OUTPUT STEPS    100
+Info: HARMONIC CONSTRAINTS ACTIVE
+Info: HARMONIC CONS EXP      2
+Info: ELECTRIC FIELD ACTIVE
+Info: E-FIELD VECTOR         (0, 0, 0.00515)
+Info: E-FIELD FREQUENCY IS (1/ps) 0
+Info: E-FIELD PHASE IS     (deg)  0
+Info: LANGEVIN DYNAMICS ACTIVE
+Info: LANGEVIN TEMPERATURE   295
+Info: LANGEVIN USING BBK INTEGRATOR
+Info: LANGEVIN DAMPING COEFFICIENTS DETERMINED FROM FILES
+Info: LANGEVIN DAMPING FILE:  sample1.0.pdb
+Info: LANGEVIN DAMPING COLUMN:  B
+Info: PARTICLE MESH EWALD (PME) ACTIVE
+Info: PME TOLERANCE               1e-06
+Info: PME EWALD COEFFICIENT       0.257952
+Info: PME INTERPOLATION ORDER     4
+Info: PME GRID DIMENSIONS         48 48 64
+Info: PME MAXIMUM GRID SPACING    1.5
+Info: Attempting to read FFTW data from FFTW_NAMD_2.14_Linux-x86_64-multicore.txt
+Info: Optimizing 6 FFT steps.  1... 2... 3... 4... 5... 6...   Done.
+Info: Writing FFTW data to FFTW_NAMD_2.14_Linux-x86_64-multicore.txt
+Info: FULL ELECTROSTATIC EVALUATION FREQUENCY      4
+Info: USING VERLET I (r-RESPA) MTS SCHEME.
+Info: C1 SPLITTING OF LONG RANGE ELECTROSTATICS
+Info: PLACING ATOMS IN PATCHES BY HYDROGEN GROUPS
+Info: NONBONDED FORCES EVALUATED EVERY 2 STEPS
+Info: RANDOM NUMBER SEED     1717701733
+Info: USE HYDROGEN BONDS?    NO
+Info: COORDINATE PDB         sample.pdb
+Info: STRUCTURE FILE         sample.psf
+Info: PARAMETER file: CHARMM format! 
+Info: PARAMETERS             cornell.prm
+Info: PARAMETERS             par_silicon_ions_NEW5.inp
+Info: USING ARITHMETIC MEAN TO COMBINE L-J SIGMA PARAMETERS
+Info: BINARY COORDINATES     sample.coor
+Info: SUMMARY OF PARAMETERS:
+Info: 96 BONDS
+Info: 229 ANGLES
+Info: 81 DIHEDRAL
+Info: 31 IMPROPER
+Info: 0 CROSSTERM
+Info: 62 VDW
+Info: 0 VDW_PAIRS
+Info: 0 NBTHOLE_PAIRS
+Info: TIME FOR READING PSF FILE: 0.0243718
+Info: Reading pdb file sample.pdb
+Info: TIME FOR READING PDB FILE: 0.00664717
+Info: 
+Info: ****************************
+Info: STRUCTURE SUMMARY:
+Info: 5545 ATOMS
+Info: 5274 BONDS
+Info: 7833 ANGLES
+Info: 0 DIHEDRALS
+Info: 0 IMPROPERS
+Info: 0 CROSSTERMS
+Info: 0 EXCLUSIONS
+Info: 1758 CONSTRAINTS
+Info: 16635 DEGREES OF FREEDOM
+Info: 3087 HYDROGEN GROUPS
+Info: 3 ATOMS IN LARGEST HYDROGEN GROUP
+Info: 3087 MIGRATION GROUPS
+Info: 3 ATOMS IN LARGEST MIGRATION GROUP
+Info: TOTAL MASS = 60995.4 amu
+Info: TOTAL CHARGE = -0.00015521 e
+Info: MASS DENSITY = 1.77062 g/cm^3
+Info: ATOM DENSITY = 0.0969329 atoms/A^3
+Info: *****************************
+Info: Reading from binary file sample.coor
+Info: 
+Info: Entering startup at 0.0543037 s, 52.2148 MB of memory in use
+Info: Startup phase 0 took 7.0369e-05 s, 52.2148 MB of memory in use
+Info: ADDED 26253 IMPLICIT EXCLUSIONS
+Info: Startup phase 1 took 0.00434294 s, 53.5352 MB of memory in use
+Info: NONBONDED TABLE R-SQUARED SPACING: 0.0625
+Info: NONBONDED TABLE SIZE: 769 POINTS
+Info: ABSOLUTE IMPRECISION IN FAST TABLE FORCE: 2.64698e-23 AT 11.9138
+Info: RELATIVE IMPRECISION IN FAST TABLE FORCE: 1.40436e-16 AT 11.9138
+Info: INCONSISTENCY IN FAST TABLE ENERGY VS FORCE: 0.000325096 AT 11.9556
+Info: ABSOLUTE IMPRECISION IN SCOR TABLE FORCE: 4.10282e-22 AT 11.9138
+Info: RELATIVE IMPRECISION IN SCOR TABLE FORCE: 3.56912e-15 AT 11.9138
+Info: INCONSISTENCY IN SCOR TABLE ENERGY VS FORCE: 0.000324844 AT 11.9556
+Info: ABSOLUTE IMPRECISION IN VDWA TABLE ENERGY: 9.86076e-32 AT 11.8295
+Info: RELATIVE IMPRECISION IN VDWA TABLE ENERGY: 6.75473e-14 AT 11.9138
+Info: ABSOLUTE IMPRECISION IN VDWA TABLE FORCE: 4.62223e-32 AT 11.9138
+Info: RELATIVE IMPRECISION IN VDWA TABLE FORCE: 2.12237e-15 AT 11.9138
+Info: INCONSISTENCY IN VDWA TABLE ENERGY VS FORCE: 0.0040507 AT 0.251946
+Info: ABSOLUTE IMPRECISION IN VDWB TABLE ENERGY: 4.1359e-25 AT 11.8295
+Info: RELATIVE IMPRECISION IN VDWB TABLE ENERGY: 7.56853e-15 AT 11.9138
+Info: ABSOLUTE IMPRECISION IN VDWB TABLE FORCE: 3.87741e-26 AT 11.9138
+Info: RELATIVE IMPRECISION IN VDWB TABLE FORCE: 5.97409e-16 AT 11.9138
+Info: INCONSISTENCY IN VDWB TABLE ENERGY VS FORCE: 0.00150189 AT 0.251946
+Info: Startup phase 2 took 0.00100574 s, 53.8945 MB of memory in use
+Info: Startup phase 3 took 5.5701e-05 s, 53.8945 MB of memory in use
+Info: Startup phase 4 took 6.3516e-05 s, 53.8945 MB of memory in use
+Info: Startup phase 5 took 5.0265e-05 s, 53.8945 MB of memory in use
+Info: PATCH GRID IS 1 (PERIODIC) BY 1 (PERIODIC) BY 2 (PERIODIC)
+Info: PATCH GRID IS 1-AWAY BY 1-AWAY BY 1-AWAY
+Info: Reading from binary file sample.vel
+Info: REMOVING COM VELOCITY 0.0693648 0.00729871 -0.00942431
+Info: LARGEST PATCH (1) HAS 2775 ATOMS
+Info: TORUS A SIZE 1 USING 0
+Info: TORUS B SIZE 1 USING 0
+Info: TORUS C SIZE 1 USING 0
+Info: TORUS MINIMAL MESH SIZE IS 1 BY 1 BY 1
+Info: Placed 100% of base nodes on same physical node as patch
+Info: Startup phase 6 took 0.00160487 s, 55.1719 MB of memory in use
+Info: PME using 1 and 1 processors for FFT and reciprocal sum.
+Info: PME GRID LOCATIONS: 0
+Info: PME TRANS LOCATIONS: 0
+Info: PME USING 1 GRID NODES AND 1 TRANS NODES
+Info: Optimizing 4 FFT steps.  1... 2... 3... 4...   Done.
+Info: Startup phase 7 took 0.000655291 s, 55.75 MB of memory in use
+Info: Startup phase 8 took 6.5459e-05 s, 55.75 MB of memory in use
+Info: Startup phase 9 took 7.4557e-05 s, 55.75 MB of memory in use
+Info: Startup phase 10 took 7.4825e-05 s, 55.75 MB of memory in use
+Info: Startup phase 11 took 6.1156e-05 s, 55.75 MB of memory in use
+LDB: Central LB being created...
+Info: Startup phase 12 took 0.000108599 s, 55.75 MB of memory in use
+Info: CREATING 49 COMPUTE OBJECTS
+Info: Startup phase 13 took 0.000190672 s, 55.75 MB of memory in use
+Info: Startup phase 14 took 5.3708e-05 s, 55.75 MB of memory in use
+Info: Startup phase 15 took 2.9083e-05 s, 55.75 MB of memory in use
+Info: Finished startup at 0.0628105 s, 55.75 MB of memory in use
+
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:       0      1930.2729       593.7770         0.0000         0.0000        -232615.8824      3857.7170       994.5127        -0.2426      4831.2738        -220408.5716       292.3003   -225239.8454   -220342.8103       292.3003           -915.4530     -2952.3793     57204.5172      -915.4530     -2952.3793
+
+OPENING EXTENDED SYSTEM TRAJECTORY FILE
+LDB: ============= START OF LOAD BALANCING ============== 0.506408
+LDB: ============== END OF LOAD BALANCING =============== 0.506486
+LDB: =============== DONE WITH MIGRATION ================ 0.506541
+LDB: ============= START OF LOAD BALANCING ============== 2.20154
+LDB: ============== END OF LOAD BALANCING =============== 2.2016
+LDB: =============== DONE WITH MIGRATION ================ 2.20178
+Info: Initial time: 1 CPUs 0.0212483 s/step 0.245929 days/ns 70.1445 MB memory
+TIMING: 100  CPU: 2.22246, 0.0212807/step  Wall: 2.22328, 0.021253/step, 0.00531326 hours remaining, 70.144531 MB of memory in use.
+ENERGY:     100      1940.1099       519.7092         0.0000         0.0000        -232701.0677      3929.0144       984.0007        -0.2689      4968.3893        -220360.1132       300.5960   -225328.5025   -220293.8634       298.1967           -678.9212     -2502.0215     57204.5172     -2759.0246     -2749.6970
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 100
+OPENING COORDINATE DCD FILE
+WRITING COORDINATES TO DCD FILE run0.dcd AT STEP 100
+WRITING COORDINATES TO RESTART FILE AT STEP 100
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=100) takes 0.001 seconds, 70.145 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 100
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=100) takes 0.000 seconds, 70.145 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 2.62449
+LDB: ============== END OF LOAD BALANCING =============== 2.62455
+LDB: =============== DONE WITH MIGRATION ================ 2.62463
+LDB: ============= START OF LOAD BALANCING ============== 4.27743
+LDB: ============== END OF LOAD BALANCING =============== 4.27747
+LDB: =============== DONE WITH MIGRATION ================ 4.27761
+Info: Initial time: 1 CPUs 0.0207269 s/step 0.239894 days/ns 71.1523 MB memory
+TIMING: 200  CPU: 4.2949, 0.0207243/step  Wall: 4.29638, 0.0207311/step, 0.0046069 hours remaining, 71.152344 MB of memory in use.
+ENERGY:     200      1902.8039       554.0511         0.0000         0.0000        -232859.7161      4041.9824      1002.5822        -0.2693      4960.5005        -220398.0654       300.1187   -225358.5659   -220332.5482       299.0224           1260.8124     -1645.6026     57204.5172     -1874.6014     -1875.2762
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 200
+WRITING COORDINATES TO DCD FILE run0.dcd AT STEP 200
+WRITING COORDINATES TO RESTART FILE AT STEP 200
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=200) takes 0.001 seconds, 71.152 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 200
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=200) takes 0.000 seconds, 71.152 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 6.32769
+LDB: ============== END OF LOAD BALANCING =============== 6.32775
+LDB: =============== DONE WITH MIGRATION ================ 6.32792
+Info: Initial time: 1 CPUs 0.0204973 s/step 0.237237 days/ns 71.1523 MB memory
+TIMING: 300  CPU: 6.34379, 0.0204889/step  Wall: 6.34642, 0.0205004/step, 0.00398619 hours remaining, 71.152344 MB of memory in use.
+ENERGY:     300      1895.2884       560.1871         0.0000         0.0000        -232885.6151      4094.5417       984.2513        -0.2581      4951.9393        -220399.6653       299.6007   -225351.6046   -220334.0946       297.4106           1686.3367      -903.0723     57204.5172     -1283.8009     -1298.7607
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 300
+WRITING COORDINATES TO DCD FILE run0.dcd AT STEP 300
+WRITING COORDINATES TO RESTART FILE AT STEP 300
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=300) takes 0.001 seconds, 71.152 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 300
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=300) takes 0.000 seconds, 71.152 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 8.36498
+LDB: ============== END OF LOAD BALANCING =============== 8.36504
+LDB: =============== DONE WITH MIGRATION ================ 8.36523
+Info: Benchmark time: 1 CPUs 0.0203849 s/step 0.235936 days/ns 71.1523 MB memory
+TIMING: 400  CPU: 8.38178, 0.0203799/step  Wall: 8.38524, 0.0203882/step, 0.00339803 hours remaining, 71.152344 MB of memory in use.
+ENERGY:     400      1959.3111       566.2203         0.0000         0.0000        -232669.7855      3907.5474       957.1139        -0.2661      4879.8386        -220400.0203       295.2385   -225279.8589   -220337.2281       296.8376             13.2079     -1835.0695     57204.5172     -1424.5805     -1414.2864
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 400
+WRITING COORDINATES TO DCD FILE run0.dcd AT STEP 400
+WRITING COORDINATES TO RESTART FILE AT STEP 400
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=400) takes 0.001 seconds, 71.152 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 400
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=400) takes 0.000 seconds, 71.152 MB of memory in use
+Info: Benchmark time: 1 CPUs 0.0202322 s/step 0.234169 days/ns 71.1523 MB memory
+TIMING: 500  CPU: 10.4046, 0.0202279/step  Wall: 10.4086, 0.0202331/step, 0.00281015 hours remaining, 71.152344 MB of memory in use.
+ENERGY:     500      1911.4247       545.2671         0.0000         0.0000        -232688.6929      3976.0761       988.9402        -0.2734      4863.5184        -220403.7398       294.2511   -225267.2582   -220338.7543       296.1843            753.6043     -1785.6741     57204.5172     -1197.7308     -1191.6671
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 500
+WRITING COORDINATES TO DCD FILE run0.dcd AT STEP 500
+WRITING COORDINATES TO RESTART FILE AT STEP 500
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=500) takes 0.001 seconds, 71.152 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 500
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=500) takes 0.000 seconds, 71.152 MB of memory in use
+Info: Benchmark time: 1 CPUs 0.0201898 s/step 0.233678 days/ns 71.1523 MB memory
+TIMING: 600  CPU: 12.4225, 0.0201794/step  Wall: 12.4276, 0.0201905/step, 0.00224339 hours remaining, 71.152344 MB of memory in use.
+ENERGY:     600      1900.0281       546.1843         0.0000         0.0000        -232775.7450      3983.7559      1016.7458        -0.2570      4911.2343        -220418.0537       297.1380   -225329.2880   -220352.2792       296.0956            790.6030     -2148.2946     57204.5172     -1312.8773     -1331.2867
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 600
+WRITING COORDINATES TO DCD FILE run0.dcd AT STEP 600
+WRITING COORDINATES TO RESTART FILE AT STEP 600
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=600) takes 0.001 seconds, 71.152 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 600
+FINISHED WRITING RESTART VELOCITIES
+Info: Benchmark time: 1 CPUs 0.0202029 s/step 0.23383 days/ns 71.1523 MB memory
+TIMING: 700  CPU: 14.4423, 0.0201975/step  Wall: 14.448, 0.0202037/step, 0.00168364 hours remaining, 71.152344 MB of memory in use.
+ENERGY:     700      1951.2058       585.7753         0.0000         0.0000        -233062.1436      4163.8504      1000.1305        -0.3186      4915.4182        -220446.0820       297.3912   -225361.5002   -220374.3144       297.4250            545.9843     -1220.5934     57204.5172     -2361.2455     -2356.1266
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 700
+WRITING COORDINATES TO DCD FILE run0.dcd AT STEP 700
+WRITING COORDINATES TO RESTART FILE AT STEP 700
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=700) takes 0.001 seconds, 71.152 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 700
+FINISHED WRITING RESTART VELOCITIES
+Info: Benchmark time: 1 CPUs 0.020282 s/step 0.234746 days/ns 71.1523 MB memory
+TIMING: 800  CPU: 16.47, 0.020277/step  Wall: 16.4763, 0.020283/step, 0.00112683 hours remaining, 71.152344 MB of memory in use.
+ENERGY:     800      1932.0720       575.8210         0.0000         0.0000        -233059.8967      4120.2975      1004.7236        -0.3106      4934.5530        -220492.7402       298.5488   -225427.2932   -220416.4737       297.1099            619.8284      -975.6133     57204.5172      -817.5150      -806.4336
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 800
+WRITING COORDINATES TO DCD FILE run0.dcd AT STEP 800
+WRITING COORDINATES TO RESTART FILE AT STEP 800
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=800) takes 0.001 seconds, 71.152 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 800
+FINISHED WRITING RESTART VELOCITIES
+Info: Benchmark time: 1 CPUs 0.020246 s/step 0.234328 days/ns 71.1523 MB memory
+TIMING: 900  CPU: 18.4937, 0.0202373/step  Wall: 18.5009, 0.0202467/step, 0.000562408 hours remaining, 71.152344 MB of memory in use.
+ENERGY:     900      1893.2504       552.5866         0.0000         0.0000        -232799.6982      4064.3610       991.2485        -0.3514      4860.0561        -220438.5469       294.0417   -225298.6030   -220368.6249       294.7281           1414.8004      -847.4597     57204.5172      -719.9152      -714.8857
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 900
+WRITING COORDINATES TO DCD FILE run0.dcd AT STEP 900
+WRITING COORDINATES TO RESTART FILE AT STEP 900
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=900) takes 0.001 seconds, 71.152 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 900
+FINISHED WRITING RESTART VELOCITIES
+TIMING: 1000  CPU: 20.5065, 0.0201281/step  Wall: 20.5168, 0.0201589/step, 0 hours remaining, 71.152344 MB of memory in use.
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:    1000      1925.8133       577.4265         0.0000         0.0000        -232692.7596      3867.5859       981.4415        -0.3329      4912.7062        -220428.1190       297.2271   -225340.8253   -220368.3795       296.7132            781.8309     -2389.8616     57204.5172     -2294.0384     -2310.9490
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 1000
+WRITING COORDINATES TO DCD FILE run0.dcd AT STEP 1000
+WRITING COORDINATES TO RESTART FILE AT STEP 1000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=1000) takes 0.001 seconds, 71.152 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 1000
+FINISHED WRITING RESTART VELOCITIES
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 1000
+CLOSING EXTENDED SYSTEM TRAJECTORY FILE
+WRITING COORDINATES TO OUTPUT FILE AT STEP 1000
+CLOSING COORDINATE DCD FILE run0.dcd
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 1000
+====================================================
+
+WallClock: 20.601910  CPUTime: 20.572531  Memory: 71.152344 MB
+[Partition 0][Node 0] End of program
